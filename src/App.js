@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState, useRef } from 'react';
+import { TweenMax } from 'gsap';
+import './App.scss';
 
+// import all components
+import Navbar from './components/navbar/Navbar';
+import Scroll from './components/Courandscmooth/SmoothScroll';
+import Fontpage from './components/fontpage/Fontpage';
+import Miniabout from './components/miniabout/Miniabout';
+import Work from './components/work/Work';
+import About from './components/about/About';
+import Footer from './components/footer/Footer';
 function App() {
+  let app = useRef(null);
+  useEffect(() => {
+    TweenMax.to(app, 0, { css: { visibility: 'visible' } });
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App' ref={(el) => (app = el)}>
+      <Navbar />
+      <div className='smoothscroll'>
+        <Scroll />
+        <Fontpage />
+        {/*
+        <Miniabout />
+        <Work />
+        <About />
+        <Footer />
+        */}
+      </div>
     </div>
   );
 }

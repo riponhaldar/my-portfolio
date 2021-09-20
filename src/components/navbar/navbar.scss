@@ -1,0 +1,71 @@
+$navfont: 'Courier New', Courier, monospace;
+$logo: 'Courier New', Courier, monospace;
+$border: 2px solid blue;
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0.2rem;
+
+  nav {
+    // align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: rgb(255, 0, 255);
+      font-family: $logo;
+      display: flex;
+      cursor: pointer;
+      span {
+        transform: rotate(45deg);
+      }
+    }
+    .nav__items {
+      display: flex;
+      list-style: none;
+
+      .nav__links {
+        margin-right: 1.2rem;
+        padding: 0.4rem 0rem;
+        overflow: hidden;
+
+        a {
+          color: rgb(255, 0, 255);
+          cursor: pointer;
+          padding: 0.4rem 0rem;
+          font-size: 1.2rem;
+          font-family: $navfont;
+          position: relative;
+          &::after {
+            display: block;
+            content: 'd';
+            height: 2px;
+            background-color: rgb(75, 43, 255);
+            position: absolute;
+            bottom: 0;
+            // top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateX(-101%);
+          }
+          &:hover {
+            color: rgb(144, 3, 144);
+            &:after {
+              transition: transform 0.3s ease-out;
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.nav__links a.animate-out {
+  &::after {
+    transition: transform 0.3s ease-out;
+    transform: translateX(100%) !important;
+  }
+}
