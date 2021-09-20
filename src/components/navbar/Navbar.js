@@ -1,9 +1,9 @@
 import React from 'react';
 import './navbar.scss';
 import { gsap, TimelineLite } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
+// import { TextPlugin } from 'gsap/TextPlugin';
 import { useEffect } from 'react/cjs/react.development';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 function Navbar() {
   let tl = new TimelineLite({ delay: 0.4 });
   useEffect(() => {

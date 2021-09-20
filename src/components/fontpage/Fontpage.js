@@ -1,12 +1,12 @@
-import { TweenMax, TimelineLite, Power4, Back, gsap } from 'gsap';
-import { useEffect, useRef } from 'react';
+import { TimelineLite, Power4 } from 'gsap';
+import { useEffect } from 'react';
 import './header.scss';
 function Fontpage() {
   let tl = new TimelineLite({ delay: 0.4 });
   useEffect(() => {
     tl.from('.line p', 2, {
       y: 150,
-      ease: 'power4.out',
+      ease: Power4.out,
       delay: 0.8,
       skewY: 4,
       stagger: {
