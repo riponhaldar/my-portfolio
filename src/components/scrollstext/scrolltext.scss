@@ -1,0 +1,27 @@
+.scroll_text {
+  width: 100%;
+  top: -3rem;
+  overflow: hidden;
+  position: relative;
+  bottom: 4rem;
+  .scroll_text__next {
+    display: flex;
+    white-space: nowrap;
+    font-size: 10rem;
+    animation: animate 6s linear infinite;
+    animation-delay: -40s;
+    z-index: -1;
+    span {
+      -webkit-text-stroke: 1px #d1d5db;
+      color: transparent;
+    }
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

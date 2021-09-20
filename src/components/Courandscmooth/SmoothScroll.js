@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 
 const overscrollOptions = {
-  enable: true,
+  enable: false,
   effect: 'bounce',
-  damping: 0.23,
+  damping: 0.1,
   renderByPixels: true,
   maxOverscroll: 150,
   continuousScrolling: true,

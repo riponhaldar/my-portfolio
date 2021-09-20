@@ -1,7 +1,7 @@
 $navfont: 'Courier New', Courier, monospace;
 $logo: 'Courier New', Courier, monospace;
 $border: 2px solid blue;
-
+$color: rgb(255, 0, 255);
 .navbar {
   z-index: 19999;
   position: fixed;
@@ -16,7 +16,7 @@ $border: 2px solid blue;
     .logo {
       font-size: 1.4rem;
       font-weight: bold;
-      color: rgb(255, 0, 255);
+      color: $color;
       font-family: $logo;
       display: flex;
       cursor: pointer;
@@ -34,7 +34,9 @@ $border: 2px solid blue;
         overflow: hidden;
 
         a {
-          color: rgb(246, 0, 246);
+          text-transform: uppercase;
+          font-weight: blod;
+          color: $color;
           cursor: pointer;
           padding: 0.4rem 0rem;
           font-size: 1.2rem;

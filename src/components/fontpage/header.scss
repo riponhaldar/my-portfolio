@@ -4,21 +4,50 @@ $border: 2px solid blue;
 $border2: 2px solid red;
 $color: rgb(255, 0, 255);
 .header {
+  position: relative;
+  padding-top: 2rem;
   margin-top: 10rem;
+  height: 100vh;
+  width: 100%;
 
   .header__text {
+    z-index: 1s;
     // border: $border;
     .line {
       position: relative;
       overflow: hidden;
+
       // border: $border2;
       p {
+        z-index: 0;
+        opacity: 1;
         display: inline-block;
         font-size: 7rem;
-        cursor: pointer;
+        cursor: default;
         @media screen and(max-width : 991px ) {
           font-size: 2rem;
         }
+      }
+    }
+  }
+}
+.back_text {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: -10rem auto;
+  justify-content: center;
+  align-items: center;
+  div {
+    overflow: hidden;
+    p {
+      display: block;
+      text-align: center;
+      font-size: 12rem;
+      color: rgb(56, 56, 56);
+      @media screen and(max-width : 991px ) {
+        font-size: 7rem;
       }
     }
   }
