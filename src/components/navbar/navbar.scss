@@ -3,6 +3,7 @@ $logo: 'Courier New', Courier, monospace;
 $border: 2px solid blue;
 
 .navbar {
+  z-index: 19999;
   position: fixed;
   width: 100%;
   padding: 1rem 0.2rem;
@@ -33,7 +34,7 @@ $border: 2px solid blue;
         overflow: hidden;
 
         a {
-          color: rgb(255, 0, 255);
+          color: rgb(246, 0, 246);
           cursor: pointer;
           padding: 0.4rem 0rem;
           font-size: 1.2rem;

@@ -18,10 +18,12 @@ function App() {
   return (
     <div className='App' ref={(el) => (app = el)}>
       <Navbar />
+
       <div className='smoothscroll'>
         <Scroll />
         <Fontpage />
         {/*
+          
         <Miniabout />
         <Work />
         <About />

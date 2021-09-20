@@ -1,0 +1,25 @@
+$navfont: Georgia, 'Times New Roman', Times, serif;
+$logo: 'Courier New', Courier, monospace;
+$border: 2px solid blue;
+$border2: 2px solid red;
+$color: rgb(255, 0, 255);
+.header {
+  margin-top: 10rem;
+
+  .header__text {
+    // border: $border;
+    .line {
+      position: relative;
+      overflow: hidden;
+      // border: $border2;
+      p {
+        display: inline-block;
+        font-size: 7rem;
+        cursor: pointer;
+        @media screen and(max-width : 991px ) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

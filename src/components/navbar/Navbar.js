@@ -1,10 +1,24 @@
 import React from 'react';
 import './navbar.scss';
-import { gsap } from 'gsap';
+import { gsap, TimelineLite } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import { useEffect } from 'react/cjs/react.development';
 import { Link } from 'react-router-dom';
 function Navbar() {
+  let tl = new TimelineLite({ delay: 0.4 });
+  useEffect(() => {
+    tl.from('ul li', 2, {
+      y: -10,
+      ease: 'power4.out',
+      delay: 0.4,
+      opacity: 0,
+      skewY: -8,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+  });
+  // Animation
   useEffect(() => {
     const navLinks = gsap.utils.toArray('.nav__items a');
     navLinks.forEach((link) => {
