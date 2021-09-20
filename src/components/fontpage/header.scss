@@ -1,31 +1,41 @@
-$navfont: Georgia, 'Times New Roman', Times, serif;
-$logo: 'Courier New', Courier, monospace;
+@import '../../media';
+$myBlodfont: myFont;
 $border: 2px solid blue;
 $border2: 2px solid red;
-$color: rgb(255, 0, 255);
+$color: rgba(253, 147, 253, 0.26);
+@font-face {
+  font-family: myFont;
+  src: url('../../font/NeueMetana-Bold.otf');
+}
 .header {
   position: relative;
   padding-top: 2rem;
-  margin-top: 10rem;
+  // margin-top: 12rem;
   height: 100vh;
   width: 100%;
 
-  .header__text {
-    z-index: 1s;
-    // border: $border;
-    .line {
-      position: relative;
-      overflow: hidden;
-
-      // border: $border2;
-      p {
-        z-index: 0;
-        opacity: 1;
-        display: inline-block;
-        font-size: 7rem;
-        cursor: default;
-        @media screen and(max-width : 991px ) {
-          font-size: 2rem;
+  .header_a {
+    margin-top: 12rem;
+    @include mobile {
+      margin-top: 8rem;
+    }
+    .header__text {
+      z-index: 1s;
+      // border: $border;
+      .line {
+        position: relative;
+        overflow: hidden;
+        p {
+          z-index: 0;
+          opacity: 1;
+          display: inline-block;
+          word-spacing: 2px;
+          font-size: 6rem;
+          font-family: $myBlodfont;
+          cursor: default;
+          @include mobile {
+            font-size: 2rem;
+          }
         }
       }
     }
@@ -39,16 +49,36 @@ $color: rgb(255, 0, 255);
   margin: -10rem auto;
   justify-content: center;
   align-items: center;
+  @include mobile {
+    margin: -17rem auto;
+    // align-items: flex-end;
+    // align-items: stretch;
+  }
   div {
     overflow: hidden;
+    @include mobile {
+      // transform: scale(2);
+    }
     p {
       display: block;
       text-align: center;
       font-size: 12rem;
-      color: rgb(56, 56, 56);
-      @media screen and(max-width : 991px ) {
-        font-size: 7rem;
+      font-family: $myBlodfont;
+      color: $color;
+      @include mobile {
+        font-size: 4rem;
       }
     }
+  }
+}
+.header_mini {
+  overflow: hidden;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  word-spacing: 2px;
+  display: none;
+  opacity: 1;
+  @include mobile {
+    display: block;
   }
 }
