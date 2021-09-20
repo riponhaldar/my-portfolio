@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { TimelineLite, Power4, gsap } from 'gsap';
+// import { TimelineLite, Power4, gsap } from 'gsap';
 import './miniabout.scss';
 
 function Miniabout() {
