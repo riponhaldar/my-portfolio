@@ -1,42 +1,41 @@
-import React, { useRef, useEffect } from 'react';
-// import { TimelineLite, Power4, gsap } from 'gsap';
 import './miniabout.scss';
-
+import { gsap, TimelineLite, Power3 } from 'gsap';
+import { useEffect, useRef } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 function Miniabout() {
-  let dargs = useRef();
+  let abouttext = useRef(null);
+  let tl = new TimelineLite({ delay: 0.4 });
   useEffect(() => {
-    dargs.addEventListener('mouseleave', () => {
-      dargs.classList.add('animate-out');
-      setTimeout(() => {
-        dargs.classList.remove('animate-out');
-      }, 300);
+    tl.from(abouttext.children, {
+      duration: 5,
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        scrub: true,
+        trigger: abouttext,
+        start: 'top bottom-=50',
+        end: 'bottom bottom-=200',
+        // markers: true,
+      },
     });
   });
 
   return (
     <>
-      <div className='about__me'>
+      <div className='about__me' id='about'>
         <div className='container'>
-          <div className='section__name'>
-            <p ref={(el) => (dargs = el)}>ABout</p>
-          </div>
-          <div className='mini__text'>
+          <div className='mini__text' ref={(el) => (abouttext = el)}>
             <div className='hey__text  hey__text__fast'>
               <div>
-                <p>Hi, my name is ripon.</p>
-                <p>Deleniti odio facere fugiat. </p>
-                <p>quia vel saepe Vitae blanditiis ab</p>
-                quia vel saepe quos enim <span> Next Js</span>
+                <p>hi, i'm ripon.</p>
+                <p>i'm a frontend developer learning now </p>
+                <span> Next Js</span>
               </div>
             </div>
             <div className='hey__text hey__text2'>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deleniti odio facere fugiat.
-                <span>Next Js</span>
-              </p>
+              <p>build project resonponsive website, fun</p>
             </div>
-            s
           </div>
         </div>
       </div>

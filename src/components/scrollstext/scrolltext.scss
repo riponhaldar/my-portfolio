@@ -8,7 +8,7 @@
   .scroll_text__next {
     display: flex;
     white-space: nowrap;
-    font-size: 10rem;
+    font-size: 8rem;
     animation: animate 4s linear infinite;
     animation-delay: -40s;
     z-index: -1;
@@ -16,7 +16,7 @@
       font-size: 8rem;
     }
     @include mobile {
-      font-size: 7rem;
+      font-size: 4rem;
     }
     span {
       -webkit-text-stroke: 1px #d1d5db;
@@ -35,8 +35,8 @@
 .scroll_text__P {
   display: flex;
   white-space: nowrap;
-  font-size: 10rem;
-  animation: animate 4s linear infinite;
+  font-size: 8rem;
+  // animation: animate 70s linear infinite;
   animation-delay: -40s;
   z-index: -1;
   transform: translateX(-200%);
@@ -44,11 +44,17 @@
     font-size: 8rem;
   }
   @include mobile {
-    font-size: 7rem;
-    transform: translateX(-1000%);
+    font-size: 4rem;
+    transform: translateX(-900%);
   }
   span {
     -webkit-text-stroke: 1px #d1d5db;
     color: transparent;
   }
+}
+
+.scrolls_text {
+  margin-top: 1rem;
+  border-top: 2px solid rgb(66, 66, 66);
+  border-bottom: 2px solid rgb(129, 129, 129);
 }

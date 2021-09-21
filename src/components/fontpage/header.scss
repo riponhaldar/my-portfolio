@@ -12,6 +12,7 @@ $color: rgba(253, 147, 253, 0.26);
   padding-top: 2rem;
   // margin-top: 12rem;
   height: 100vh;
+  margin-bottom: 1rem;
   width: 100%;
 
   .header_a {
@@ -46,7 +47,7 @@ $color: rgba(253, 147, 253, 0.26);
           }
           @include mobile {
             font-size: 2.1rem;
-            // line-height: 2.8rem;
+            line-height: 2.8rem;
           }
         }
       }

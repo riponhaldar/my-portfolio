@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './navbar.scss';
 import { TimelineLite, Power4, gsap } from 'gsap';
-
 function Navbar() {
   let navLi = useRef();
   let logo = useRef();
@@ -40,6 +39,7 @@ function Navbar() {
         }, 300);
       });
     });
+    // group lik
   });
 
   return (
@@ -52,12 +52,12 @@ function Navbar() {
                 RIpon<span>:)</span>
               </div>
 
-              <ul className='nav__items' ref={(el) => (navLi = el)}>
+              <ul className='nav__items nav' ref={(el) => (navLi = el)}>
                 <li className='nav__links'>
-                  <a href='/'>work👷‍♂️</a>
+                  <a href='#work'>work👷‍♂️</a>
                 </li>
                 <li className='nav__links'>
-                  <a href='/'>about👨‍💻</a>
+                  <a href='#about'>about👨‍💻</a>
                 </li>
                 <li className='nav__links'>
                   <a href='/'>contact📧</a>
