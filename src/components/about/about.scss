@@ -1,0 +1,147 @@
+@import '../../media';
+$myCollfont: regaular;
+$myBlodfont: myFont;
+$border: 2px solid blue;
+$border2: 2px solid red;
+$color: rgb(255, 0, 255);
+@font-face {
+  font-family: myFont;
+  src: url('../../font/NeueMetana-Bold.otf');
+}
+@font-face {
+  font-family: regaular;
+  src: url('../../font/NeueMetana-Regular.otf');
+}
+
+// start
+.section__name {
+  margin-bottom: 4rem;
+}
+.about {
+  margin-top: 4rem;
+  &__text-container {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  &__text {
+    flex: 1;
+    padding-right: 10rem;
+    @include bigscreen {
+      padding-right: 2rem;
+    }
+    @include tab {
+      padding-right: 10px;
+    }
+    @include mobile {
+      margin-top: 2rem;
+    }
+    p {
+      font-family: $myCollfont;
+      line-height: 2rem;
+      word-spacing: 2px;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    p:first-child {
+      font-size: 1.4rem;
+    }
+    //  p:nth-child(2) {
+    //  }
+    @include tab {
+      p:first-child {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__img {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+
+    img {
+      width: 320px;
+      height: 500px;
+      @include tab {
+        width: 300px;
+        height: 500px;
+      }
+      @include mobile {
+        width: 250px;
+        height: 400px;
+      }
+    }
+  }
+}
+// abouts skils tools
+.about__keys {
+  position: relative;
+  // height: 80vh;
+  .skils {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    @include tab {
+      flex-direction: column;
+    }
+    &__name {
+      font-size: 1.3rem;
+      color: silver;
+    }
+    div {
+      display: flex;
+    }
+  }
+
+  // list -itms
+  ul {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    margin-right: 3rem;
+    list-style: none;
+    li {
+      position: relative;
+      font-size: 1rem;
+      color: rgb(141, 141, 141);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 2rem;
+      &::after {
+        content: '-';
+        position: absolute;
+        top: 0;
+        left: -1rem;
+      }
+    }
+    @include mobile {
+      margin-right: 1rem;
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.tools {
+  margin-top: 2rem;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  @include tab {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  &__name {
+    font-size: 1.3rem;
+    color: silver;
+  }
+}

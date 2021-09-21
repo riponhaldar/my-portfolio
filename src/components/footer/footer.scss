@@ -1,0 +1,95 @@
+@import '../../media';
+$myCollfont: regaular;
+$myBlodfont: myFont;
+$border: 2px solid blue;
+$border2: 2px solid red;
+$color: rgb(255, 0, 255);
+@font-face {
+  font-family: myFont;
+  src: url('../../font/NeueMetana-Bold.otf');
+}
+@font-face {
+  font-family: regaular;
+  src: url('../../font/NeueMetana-Regular.otf');
+}
+
+.footer {
+  margin-top: 3rem;
+  background: rgb(5, 5, 5);
+  padding: 16px;
+  .social__contact {
+    display: flex;
+    justify-content: space-around;
+    @include tab {
+      flex-direction: column;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 2rem;
+        overflow: hidden;
+        //   padding: 0.2rem 0.8rem;
+        a {
+          padding: 0.2rem 0.8rem;
+          position: relative;
+          text-align: center;
+          color: silver;
+          font-size: 1.2rem;
+          &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateX(-101%);
+          }
+          &:hover {
+            &:after {
+              transition: transform 0.3s ease-out;
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+.social__contact ul li a.animate-out {
+  &::after {
+    transition: transform 0.3s ease-out;
+    transform: translateX(100%) !important;
+  }
+}
+.contact {
+  margin-bottom: 1rem;
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    a {
+      color: silver;
+    }
+  }
+  em {
+    cursor: pointer;
+    font-size: 1.3rem;
+    a {
+      color: silver;
+    }
+  }
+  @include tab {
+    text-align: center;
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    em {
+      text-align: center;
+    }
+  }
+}

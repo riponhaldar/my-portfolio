@@ -32,8 +32,8 @@ a {
 .smoothscroll {
   width: 100%;
   // height: 100vh;
-  // border: $border;
-  border: 4px solid transparent;
+  border-left: 4px solid rgb(4, 0, 255);
+  // border: 4px solid transparent;
   border-radius: 5px;
   animation: color 5s linear infinite;
   // smoothanimation
@@ -55,35 +55,35 @@ a {
   }
 }
 
-@keyframes color {
-  0% {
-    border-top-color: rgb(0, 30, 255);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  25% {
-    border-top-color: transparent;
-    border-right-color: rgb(0, 38, 255);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: rgb(0, 30, 255);
-    border-left-color: transparent;
-  }
-  75% {
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: rgb(0, 30, 255);
-  }
-  100% {
-    border-top-color: rgb(0, 30, 255);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-}
+// @keyframes color {
+//   0% {
+//     border-top-color: rgb(0, 30, 255);
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+//   25% {
+//     border-top-color: transparent;
+//     border-right-color: rgb(0, 38, 255);
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+//   50% {
+//     border-top-color: transparent;
+//     border-right-color: transparent;
+//     border-bottom-color: rgb(0, 30, 255);
+//     border-left-color: transparent;
+//   }
+//   75% {
+//     border-top-color: transparent;
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     border-left-color: rgb(0, 30, 255);
+//   }
+//   100% {
+//     border-top-color: rgb(0, 30, 255);
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//   }
+// }

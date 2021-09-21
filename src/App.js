@@ -9,8 +9,8 @@ import Navbar from './components/navbar/Navbar';
 import Fontpage from './components/fontpage/Fontpage';
 import Miniabout from './components/miniabout/Miniabout';
 import Work from './components/work/Work';
-// import About from './components/about/About';
-// import Footer from './components/footer/Footer';
+import About from './components/about/About';
+import Footer from './components/footer/Footer';
 function App() {
   let app = useRef(null);
   useEffect(() => {
@@ -26,11 +26,10 @@ function App() {
         <Scrolltext />
         <Miniabout />
         <Work />
-        {/* 
-        <Scroll />
-      
         <About />
         <Footer />
+        {/* 
+        <Scroll />
         */}
       </div>
     </div>

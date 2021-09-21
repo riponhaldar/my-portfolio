@@ -58,7 +58,7 @@ $color: rgb(255, 0, 255);
           }
           &::after {
             display: block;
-            content: 'd';
+            content: '';
             height: 2px;
             background-color: rgb(255, 0, 0);
             position: absolute;
