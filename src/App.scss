@@ -35,23 +35,69 @@ a {
 }
 .smoothscroll {
   width: 100%;
-  height: 100vh;
-  // position: fixed;
-  // // overflow: hidden;
-  // overflow-y: auto;
-  border: 2px solid rgb(234, 0, 255);
+  border: 2px solid transparent;
   border-radius: 5px;
   // just try
+  animation: color 5s linear infinite;
+  // smoothanimation
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
 }
 .drow {
   z-index: -3;
-  position: fixed !important;
+  position: fixed;
+  // position: relative;
   width: 100%;
   height: 100%;
+
   display: flex;
   div {
-    border: 1px solid rgb(12, 12, 12);
+    border: 1px solid rgb(49, 39, 49);
     width: 300px;
     height: 100%;
+  }
+}
+
+@keyframes color {
+  0% {
+    border-top-color: rgb(0, 30, 255);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: transparent;
+    border-right-color: rgb(0, 38, 255);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(0, 30, 255);
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgb(0, 30, 255);
+  }
+  100% {
+    border-top-color: rgb(0, 30, 255);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
   }
 }
