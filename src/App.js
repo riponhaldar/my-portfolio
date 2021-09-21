@@ -23,13 +23,12 @@ function App() {
       <Navbar />
       <div className='smoothscroll'>
         <Fontpage />
-
         <Scrolltext />
         <Miniabout />
         <Work />
         {/* 
         <Scroll />
-        
+      
         <About />
         <Footer />
         */}

@@ -28,7 +28,7 @@ function Miniabout() {
           <div className='mini__text' ref={(el) => (abouttext = el)}>
             <div className='hey__text  hey__text__fast'>
               <div>
-                <p>hi, i'm ripon.</p>
+                <p>Hi, i'm Ripon.</p>
                 <p>i'm a frontend developer learning now </p>
                 <span> Next Js</span>
               </div>

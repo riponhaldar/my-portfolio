@@ -15,32 +15,63 @@ $color: rgb(255, 0, 255);
 .about__me {
   width: 100%;
   margin-top: 10rem;
+  @include mobile {
+    margin-top: 5rem;
+  }
   .hey__text {
     // font-size: 6rem;
     display: block;
     font-family: $myCollfont;
-    font-size: 5rem;
-    p {
-      display: inline-block;
-      color: rgb(255, 255, 255);
-    }
     span {
       color: $color;
-    }
-    @include mobile {
-      font-size: 2.2rem;
+      font-size: 4rem;
+      @include mobile {
+        font-size: 2rem;
+      }
+      @include minimobile {
+        font-size: 1.2rem;
+      }
     }
   }
 }
-.hey__text__fast {
+.hey__text {
   margin-bottom: 4rem;
+  @include mobile {
+    margin-bottom: 1.5rem;
+  }
   div {
     p:first-child {
       font-size: 6rem;
       font-weight: bold;
+      word-spacing: 2px;
+      @include tab {
+        font-size: 3rem;
+      }
+      @include mobile {
+        font-size: 2rem;
+      }
+      @include minimobile {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  p {
+    font-size: 4rem;
+    word-spacing: 2px;
+    @include tab {
+      font-size: 2.4rem;
+    }
+    @include mobile {
+      font-size: 1.4rem;
+      line-height: 2.8rem;
+    }
+    @include minimobile {
+      font-size: 1.2rem;
     }
   }
 }
+
+// name of hedings
 .section__name {
   margin-bottom: 2rem;
   p {

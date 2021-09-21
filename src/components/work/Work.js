@@ -12,7 +12,7 @@ function Work() {
   // });
   return (
     <>
-      <div className='work__section'>
+      <div className='work__section' id='work'>
         <div className='container'>
           <div className='section__name'>
             <p>Work</p>

@@ -60,7 +60,7 @@ function Navbar() {
                   <a href='#about'>about👨‍💻</a>
                 </li>
                 <li className='nav__links'>
-                  <a href='/'>contact📧</a>
+                  <a href='mailto:riponhaldar006@gmail.com'>contact📧</a>
                 </li>
               </ul>
             </nav>

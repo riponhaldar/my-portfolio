@@ -14,3 +14,9 @@
     @content;
   }
 }
+
+@mixin minimobile {
+  @media screen and (max-width: 380px) {
+    @content;
+  }
+}
