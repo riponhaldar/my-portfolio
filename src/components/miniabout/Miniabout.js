@@ -7,14 +7,14 @@ function Miniabout() {
   let abouttext = useRef(null);
   let tl = new TimelineLite({ delay: 0.4 });
   useEffect(() => {
-    tl.from(abouttext.children, {
-      duration: 5,
+    tl.from(abouttext, {
+      duration: 15,
       opacity: 0,
-      y: 50,
+      y: -110,
       scrollTrigger: {
         scrub: true,
         trigger: abouttext,
-        start: 'top bottom-=50',
+        start: 'top bottom-=100',
         end: 'bottom bottom-=200',
         // markers: true,
       },

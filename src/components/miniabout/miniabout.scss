@@ -42,7 +42,7 @@ $color: rgb(255, 0, 255);
   }
 }
 .section__name {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   p {
     position: relative;
     color: rgb(149, 160, 255);
@@ -50,7 +50,7 @@ $color: rgb(255, 0, 255);
     padding: 0.4rem 0.8rem;
     font-size: 3rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: $myBlodfont;
     overflow: hidden;
     cursor: pointer;

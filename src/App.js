@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { TweenMax, gsap } from 'gsap';
-import { ScrollTrigger, ScrollToPlugin } from 'gsap/ScrollTrigger';
 import './App.scss';
 
 // import all components
@@ -9,8 +8,7 @@ import Navbar from './components/navbar/Navbar';
 // import Scroll from './components/Courandscmooth/SmoothScroll';
 import Fontpage from './components/fontpage/Fontpage';
 import Miniabout from './components/miniabout/Miniabout';
-import Scroll from './components/Courandscmooth/SmoothScroll';
-// import Work from './components/work/Work';
+import Work from './components/work/Work';
 // import About from './components/about/About';
 // import Footer from './components/footer/Footer';
 function App() {
@@ -24,20 +22,14 @@ function App() {
     <div className='App' ref={(el) => (app = el)}>
       <Navbar />
       <div className='smoothscroll'>
-        <div className='drow'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
         <Fontpage />
+
         <Scrolltext />
         <Miniabout />
-        {/* 
-          <Scroll />  
         <Work />
+        {/* 
+        <Scroll />
+        
         <About />
         <Footer />
         */}
