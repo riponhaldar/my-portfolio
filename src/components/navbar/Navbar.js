@@ -40,6 +40,8 @@ function Navbar() {
       });
     });
     // group lik
+
+    // link smooth
   });
 
   return (
@@ -48,10 +50,11 @@ function Navbar() {
         <div className='container'>
           <div className='sadasd'>
             <nav>
-              <div className='logo' ref={(el) => (logo = el)}>
-                RIpon<span>:)</span>
-              </div>
-
+              <a href='/'>
+                <div className='logo' ref={(el) => (logo = el)}>
+                  RIpon<span>:)</span>
+                </div>
+              </a>
               <ul className='nav__items nav' ref={(el) => (navLi = el)}>
                 <li className='nav__links'>
                   <a href='#work'>work👷‍♂️</a>
@@ -60,7 +63,7 @@ function Navbar() {
                   <a href='#about'>about👨‍💻</a>
                 </li>
                 <li className='nav__links'>
-                  <a href='mailto:riponhaldar006@gmail.com'>contact📧</a>
+                  <a href='#contact'>contact📧</a>
                 </li>
               </ul>
             </nav>

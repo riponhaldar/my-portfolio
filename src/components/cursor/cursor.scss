@@ -1,0 +1,40 @@
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  color: #000;
+  backdrop-filter: invert(1);
+}
+.cursor2 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  //   border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  align-items: center;
+  backdrop-filter: invert(1);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  transition: all 0.15s;
+  transform-origin: 100% 100%;
+}
+.link-grow {
+  transform: scale(2);
+
+  color: rgb(255, 8, 255);
+  //   background: rgb(255, 255, 255);
+}

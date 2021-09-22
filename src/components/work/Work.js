@@ -14,12 +14,17 @@ function Work() {
     <>
       <div className='work__section' id='work'>
         <div className='container'>
-          <div className='section__name'>
+          <div className='sec__name'>
             <p>Work</p>
           </div>
-          <div className='work'>
+          <div className='work '>
             <div className='work__fast '>
-              <img src='/demo1.png' alt='' />
+              <img
+                className='view_project'
+                src='/demo1.png'
+                alt=''
+                data-hover='{view}'
+              />
               <div className='work__fasr__text'>
                 <h4>Blog webiste</h4>
                 <p>
@@ -35,7 +40,12 @@ function Work() {
               </div>
             </div>
             <div className='work__second'>
-              <img src='/demo2.png' alt='' />
+              <img
+                className=' view_project'
+                src='/demo2.png'
+                alt=''
+                data-hover='{view}'
+              />
               <div className='work__fasr__second'>
                 <h4>Blog webiste</h4>
                 <p>

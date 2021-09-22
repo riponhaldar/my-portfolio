@@ -15,7 +15,7 @@ function Abour() {
     <div>
       <div className='about'>
         <div className='container'>
-          <div className='section__name'>
+          <div className='sec__name'>
             <p ref={(el) => (dargs = el)}>ABout</p>
           </div>
           <div className='about__text-container'>
@@ -36,7 +36,7 @@ function Abour() {
               </p>
             </div>
             <div className='about__img'>
-              <img src='/mack.jpg' alt='' />
+              <img src='/mack.jpg' alt='' data-hover=' ' />
             </div>
           </div>
           <div className='about__keys'>

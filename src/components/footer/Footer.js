@@ -3,7 +3,7 @@ import './footer.scss';
 function Footer() {
   return (
     <>
-      <div className='footer'>
+      <div className='footer' id='contact'>
         <div className='container'>
           <div className='social__contact'>
             <ul>
@@ -18,8 +18,8 @@ function Footer() {
               </li>
             </ul>
             <div className='contact'>
-              <p>
-                <a href='mailto:riponhaldar006@gmail.com'>
+              <p className='mail'>
+                <a href='mailto:riponhaldar006@gmail.com' data-hover='📧'>
                   riponhaladr006@gmail.com
                 </a>
               </p>
