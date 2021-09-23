@@ -9,6 +9,7 @@
     display: flex;
     white-space: nowrap;
     font-size: 8rem;
+    color: rgb(143, 143, 143);
     animation: animate 4s linear infinite;
     animation-delay: -40s;
     z-index: -1;
@@ -39,16 +40,17 @@
   // animation: animate 70s linear infinite;
   animation-delay: -40s;
   z-index: -1;
+  color: rgb(143, 143, 143);
   transform: translateX(-200%);
   @include tab {
     font-size: 8rem;
   }
   @include mobile {
     font-size: 4rem;
-    transform: translateX(-900%);
+    transform: translateX(-200%);
   }
   span {
-    -webkit-text-stroke: 1px #d1d5db;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
   }
 }

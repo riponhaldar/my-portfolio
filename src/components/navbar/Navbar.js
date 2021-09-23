@@ -57,10 +57,10 @@ function Navbar() {
               </a>
               <ul className='nav__items nav' ref={(el) => (navLi = el)}>
                 <li className='nav__links'>
-                  <a href='#work'>work👷‍♂️</a>
+                  <a href='#work'>work👨‍💻</a>
                 </li>
                 <li className='nav__links'>
-                  <a href='#about'>about👨‍💻</a>
+                  <a href='#about'>about🧔</a>
                 </li>
                 <li className='nav__links'>
                   <a href='#contact'>contact📧</a>

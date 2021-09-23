@@ -6,7 +6,7 @@ $border2: 2px solid red;
 $color: rgb(255, 0, 255);
 
 .work__section {
-  margin-top: 10rem;
+  margin-top: 15rem;
   width: 100%;
   @include mobile {
     margin-top: 5rem;
@@ -19,6 +19,7 @@ $color: rgb(255, 0, 255);
 
 // fast div
 .work__fast {
+  overflow: hidden;
   margin-bottom: 10rem;
   display: flex;
   flex-direction: row-reverse;
@@ -29,6 +30,7 @@ $color: rgb(255, 0, 255);
     justify-content: center;
   }
   img {
+    overflow: hidden;
     width: 60%;
     height: 100%;
     flex: 1;
@@ -37,6 +39,7 @@ $color: rgb(255, 0, 255);
     }
   }
   .work__fasr__text {
+    overflow: hidden;
     flex: 1;
     padding: 3rem 2rem 0 1rem;
     @include tab {
@@ -72,6 +75,7 @@ $color: rgb(255, 0, 255);
 }
 // second div
 .work__second {
+  overflow: hidden;
   display: flex;
   @include tab {
     width: 100%;
@@ -79,6 +83,7 @@ $color: rgb(255, 0, 255);
     justify-content: center;
   }
   img {
+    overflow: hidden;
     width: 60%;
     flex: 1;
     height: 100%;
@@ -87,6 +92,7 @@ $color: rgb(255, 0, 255);
     }
   }
   .work__fasr__second {
+    overflow: hidden;
     text-align: right;
     flex: 1;
     padding: 3rem 2rem 0 1rem;
@@ -124,6 +130,46 @@ $color: rgb(255, 0, 255);
       @include tab {
         justify-content: left;
       }
+    }
+  }
+}
+
+// text name
+.sec__name__work {
+  margin-bottom: 3rem;
+  p {
+    font-size: 5rem;
+    color: #fff;
+    position: relative;
+    @include mobile {
+      font-size: 3rem;
+    }
+    &::after {
+      content: 'SOME WORK';
+      position: absolute;
+      left: 0;
+      opacity: 0.4;
+      font-size: 10rem;
+      bottom: -20px;
+      z-index: 1;
+      @include tab {
+        font-size: 5rem;
+        bottom: 0;
+      }
+      @include mobile {
+        font-size: 3rem;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 10%;
+      z-index: -2;
+      width: 100%;
+      height: 15px;
+      background: rgba(17, 0, 255, 0.979);
+      opacity: 0.8;
     }
   }
 }

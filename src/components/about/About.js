@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './about.scss';
 function Abour() {
   let dargs = useRef();
@@ -9,6 +11,8 @@ function Abour() {
         dargs.classList.remove('animate-out');
       }, 300);
     });
+    // aos Animation
+    AOS.init({ duration: 2000 });
   });
 
   return (
@@ -16,9 +20,9 @@ function Abour() {
       <div className='about'>
         <div className='container'>
           <div className='sec__name'>
-            <p ref={(el) => (dargs = el)}>ABout</p>
+            <p ref={(el) => (dargs = el)}>About</p>
           </div>
-          <div className='about__text-container'>
+          <div data-aos='fade-up' className='about__text-container'>
             <div className='about__text'>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -39,7 +43,7 @@ function Abour() {
               <img src='/mack.jpg' alt='' data-hover=' ' />
             </div>
           </div>
-          <div className='about__keys'>
+          <div data-aos='fade-in' className='about__keys'>
             <div className='skils'>
               <div className='skils__name'>
                 PROGRAMMING LANGUAGES & OTHERS :
