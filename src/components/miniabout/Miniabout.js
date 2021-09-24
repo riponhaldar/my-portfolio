@@ -23,7 +23,7 @@ function Miniabout() {
 
   return (
     <>
-      <div className='about__me' id='about'>
+      <div className='about__me'>
         <div className='container'>
           <div className='mini__text' ref={(el) => (abouttext = el)}>
             <div className='hey__text  hey__text__fast'>

@@ -10,7 +10,7 @@ function Abour() {
 
   return (
     <div>
-      <div className='about'>
+      <div className='about' id='about'>
         <div className='container'>
           <div className='sec__name'>
             <p>About</p>
@@ -18,8 +18,7 @@ function Abour() {
           <div data-aos='fade-up' className='about__text-container'>
             <div className='about__text'>
               <p>
-                Well hello,👋there my name is Ripon Haldar🧔. i'm 22 years old.
-                i'm from
+                Hello👋there, my name is Ripon Haldar🧔. now 22 years old. From
                 <span> Kolkata, India.</span>
               </p>
               <p>

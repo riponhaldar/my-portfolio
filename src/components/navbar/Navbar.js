@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import './navbar.scss';
 import { TimelineLite, Power4, gsap } from 'gsap';
 function Navbar() {
@@ -57,13 +58,19 @@ function Navbar() {
               </a>
               <ul className='nav__items nav' ref={(el) => (navLi = el)}>
                 <li className='nav__links'>
-                  <a href='#work'>work👨‍💻</a>
+                  <Link spy={true} smooth={true} duration={1000} to='work'>
+                    work👨‍💻
+                  </Link>
                 </li>
                 <li className='nav__links'>
-                  <a href='#about'>about🧔</a>
+                  <Link spy={true} smooth={true} duration={1000} to='about'>
+                    about🧔
+                  </Link>
                 </li>
                 <li className='nav__links'>
-                  <a href='#contact'>contact📧</a>
+                  <Link spy={true} smooth={true} duration={1000} to='contact'>
+                    contact📧
+                  </Link>
                 </li>
               </ul>
             </nav>
