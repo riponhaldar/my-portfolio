@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './scrolltext.scss';
-import { TimelineLite, Power3, gsap } from 'gsap';
+import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 function Scrolltext() {

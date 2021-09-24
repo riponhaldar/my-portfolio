@@ -1,16 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './about.scss';
 function Abour() {
-  let dargs = useRef();
   useEffect(() => {
-    dargs.addEventListener('mouseleave', () => {
-      dargs.classList.add('animate-out');
-      setTimeout(() => {
-        dargs.classList.remove('animate-out');
-      }, 300);
-    });
     // aos Animation
     AOS.init({ duration: 2000 });
   });
@@ -20,23 +13,26 @@ function Abour() {
       <div className='about'>
         <div className='container'>
           <div className='sec__name'>
-            <p ref={(el) => (dargs = el)}>About</p>
+            <p>About</p>
           </div>
           <div data-aos='fade-up' className='about__text-container'>
             <div className='about__text'>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                Well hello,👋there my name is Ripon Haldar🧔. i'm 22 years old.
+                i'm from
+                <span> Kolkata, India.</span>
               </p>
               <p>
-                quis soluta asperiores harum alias facilis labore, cum ad,
-                fugiat assumenda quidem delectus possimus aliquid quasi esse?
-                Minima quaerat soluta eius?
+                I have 1️⃣ year of experience, creating web/design & responsive
+                websites.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                quis soluta asperiores harum alias facilis labore, cum ad,
-                fugiat assumenda quidem delectus possimus aliquid quasi esse?
-                Minima quaerat soluta eius?
+                I also like to work in a team 👨‍💻, try to use all tools in my
+                work to achieve good results. Now I'm working on MongoDB.
+              </p>
+              <p>
+                <br />
+                When I'm not Coding, I watch Netflix 🥤 or youtube 🍿.
               </p>
             </div>
             <div className='about__img'>

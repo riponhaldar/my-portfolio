@@ -1,5 +1,5 @@
 import './miniabout.scss';
-import { gsap, TimelineLite, Power3 } from 'gsap';
+import { gsap, TimelineLite } from 'gsap';
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -28,13 +28,13 @@ function Miniabout() {
           <div className='mini__text' ref={(el) => (abouttext = el)}>
             <div className='hey__text  hey__text__fast'>
               <div>
-                <p>Hi, i'm Ripon.</p>
-                <p>i'm a frontend developer learning now </p>
-                <span> Next Js</span>
+                <p>Hi, I'm Ripon.</p>
+                <p>I'm a frontend developer,, I complete my bachelor degree.</p>
               </div>
             </div>
             <div className='hey__text hey__text2'>
-              <p>build project resonponsive website, fun</p>
+              <p>Build some responsive website, some clone. now I'm working </p>
+              <span>MongoDB</span>
             </div>
           </div>
         </div>

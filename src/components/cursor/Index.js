@@ -1,8 +1,7 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
-import { TweenMax, gsap } from 'gsap';
+import { useEffect } from 'react';
+
 import './cursor.scss';
-import { NavLink } from 'react-router-dom';
 
 function Index() {
   useEffect(() => {

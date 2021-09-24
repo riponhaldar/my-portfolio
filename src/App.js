@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-import LocomotiveScroll from 'locomotive-scroll';
 import './App.scss';
 // import all components
 import Scrolltext from './components/scrollstext/Scrolltext';
