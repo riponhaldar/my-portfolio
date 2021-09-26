@@ -30,16 +30,22 @@ function Work() {
               <div data-aos='fade-right' className='work__fasr__text'>
                 <h4>Hoichoi Clone</h4>
                 <p>
-                  <a href='https://hoichoi-just-try.netlify.app/'>
+                  <a
+                    href='https://hoichoi-just-try.netlify.app/'
+                    target='_blank'
+                  >
                     hoichoi clone 👁
                   </a>{' '}
                   using slick for image slide,resposive. 👉
-                  <a href='https://github.com/riponhaldar/Hoichoi_mini'>
+                  <a
+                    href='https://github.com/riponhaldar/Hoichoi_mini'
+                    target='_blank'
+                  >
                     {' '}
                     Source Code 👨‍💻
                   </a>{' '}
                   <br />
-                  <a href='https://www.hoichoi.tv'>
+                  <a href='https://www.hoichoi.tv' target='_blank'>
                     hoichoi is a Bengali OTT platform.
                   </a>
                 </p>

@@ -55,12 +55,12 @@ function Abour() {
                     <span>Tailwindcss</span>
                   </li>
                   <li>
-                    <span>sBootstrap</span>
+                    <span>Bootstrap</span>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <span> Gsap</span>
+                    <span>Gsap</span>
                   </li>
                   <li>
                     <span>React Js</span>
@@ -76,14 +76,14 @@ function Abour() {
               </div>
             </div>
             <div className='tools'>
-              <div className='tools__name'>Lorem ipsum dolor sit.</div>
+              <div className='tools__name'>Tools</div>
               <div>
                 <ul>
                   <li>
-                    <span>Vs Code</span>
+                    <span>Vs code</span>
                   </li>
                   <li>
-                    <span>Photoshop</span>
+                    <span>photoshop</span>
                   </li>
                   <li>
                     <span>Figma</span>

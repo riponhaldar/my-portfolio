@@ -8,13 +8,22 @@ function Footer() {
           <div className='social__contact'>
             <ul>
               <li>
-                <a href='/'>LinkedIN</a>
+                <a
+                  href='https://www.linkedin.com/in/riponhaldar'
+                  target='_blank'
+                >
+                  LinkedIn
+                </a>
               </li>
               <li>
-                <a href='/'>github</a>
+                <a href='https://github.com/riponhaldar' target='_blank'>
+                  Github
+                </a>
               </li>
               <li>
-                <a href='/'>Twitter</a>
+                <a href='https://twitter.com/riphaldar' target='_blank'>
+                  Twitter
+                </a>
               </li>
             </ul>
             <div className='contact'>
