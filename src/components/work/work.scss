@@ -6,7 +6,7 @@ $border2: 2px solid red;
 $color: rgb(255, 0, 255);
 
 .work__section {
-  margin-top: 15rem;
+  margin-top: 10rem;
   width: 100%;
   @include mobile {
     margin-top: 5rem;
@@ -14,6 +14,13 @@ $color: rgb(255, 0, 255);
   .work {
     width: 100%;
     padding: 4vw 0;
+    h1 {
+      text-align: center;
+      @include mobile {
+        font-size: 1.5rem;
+        color: silver;
+      }
+    }
   }
 }
 
@@ -23,21 +30,32 @@ $color: rgb(255, 0, 255);
   margin-bottom: 10rem;
   display: flex;
   flex-direction: row-reverse;
+
   @include tab {
     margin-bottom: 5rem;
     width: 100%;
     display: block;
     justify-content: center;
   }
-  img {
-    overflow: hidden;
-    width: 60%;
-    height: 100%;
-    flex: 1;
+  div {
+    flex: 2;
+    width: 50%;
+    img {
+      width: 100%;
+    }
     @include tab {
       width: 100%;
     }
   }
+  // img {
+  //   overflow: hidden;
+  //   width: 60%;
+  //   height: 100%;
+  //   flex: 2;
+  //   @include tab {
+  //     width: 100%;
+  //   }
+  // }
   .work__fasr__text {
     overflow: hidden;
     flex: 1;
@@ -56,9 +74,24 @@ $color: rgb(255, 0, 255);
     }
     p {
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      display: inline-block;
+
+      a:first-child {
+        color: rgb(255, 0, 255);
+        text-decoration: underline;
+      }
+      a:nth-of-type(2) {
+        color: red;
+      }
+      a:nth-of-type(3) {
+        color: rgb(89, 0, 255);
+      }
       @include mobile {
         font-size: 1.1rem;
+      }
+      @include mobile {
+        font-size: 1.2rem;
       }
     }
     p:last-child {
@@ -85,7 +118,7 @@ $color: rgb(255, 0, 255);
   img {
     overflow: hidden;
     width: 60%;
-    flex: 1;
+    flex: 2;
     height: 100%;
     @include tab {
       width: 100%;

@@ -29,11 +29,11 @@ function Miniabout() {
             <div className='hey__text  hey__text__fast'>
               <div>
                 <p>Hi, I'm Ripon.</p>
-                <p>I'm a frontend developer,, I complete my bachelor degree.</p>
+                <p>I'm a frontend developer,I complete my bachelor degree.</p>
               </div>
             </div>
             <div className='hey__text hey__text2'>
-              <p>Build some responsive website, some clone. now I'm working </p>
+              <p>Build some responsive website, some clone. now I'm Learning</p>
               <span>MongoDB</span>
             </div>
           </div>

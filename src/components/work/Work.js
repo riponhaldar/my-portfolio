@@ -16,32 +16,47 @@ function Work() {
           </div>
           <div className='work '>
             <div className='work__fast'>
-              <img
-                data-aos='fade-left'
-                className='view_project'
-                src='/demo1.png'
-                alt=''
-                data-hover='{view}'
-              />
+              <div>
+                <a href='https://hoichoi-just-try.netlify.app/' target='_blank'>
+                  <img
+                    data-aos='fade-left'
+                    className='view_project'
+                    src='/hoichoi.png'
+                    alt=''
+                    data-hover='{view}'
+                  />
+                </a>
+              </div>
               <div data-aos='fade-right' className='work__fasr__text'>
-                <h4>Blog webiste</h4>
+                <h4>Hoichoi Clone</h4>
                 <p>
-                  Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet
-                  consectetur adipisicing elit. Dolores, excepturi! Lorem ipsum
-                  dolor sit amet Lorem ipsum, dolor sit amet
+                  <a href='https://hoichoi-just-try.netlify.app/'>
+                    hoichoi clone 👁
+                  </a>{' '}
+                  using slick for image slide,resposive. 👉
+                  <a href='https://github.com/riponhaldar/Hoichoi_mini'>
+                    {' '}
+                    Source Code 👨‍💻
+                  </a>{' '}
+                  <br />
+                  <a href='https://www.hoichoi.tv'>
+                    hoichoi is a Bengali OTT platform.
+                  </a>
                 </p>
                 <p>
-                  <span>NEXT js</span>
-                  <span>NEXT js</span>
-                  <span>NEXT js</span>
+                  <span>HTML</span>
+                  <span>SASS</span>
+                  <span>SLICK</span>
                 </p>
               </div>
             </div>
+            <h1>projects coming soon ... </h1>
+            {/*
             <div data-aos='fade-up' className='work__second'>
               <img
                 data-aos='fade-right'
                 className=' view_project'
-                src='/demo2.png'
+                src='/hoichoi.png'
                 alt=''
                 data-hover='{view}'
               />
@@ -59,6 +74,7 @@ function Work() {
                 </p>
               </div>
             </div>
+         */}
           </div>
         </div>
       </div>
