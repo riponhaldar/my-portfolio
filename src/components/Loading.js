@@ -6,25 +6,24 @@ function Loading({ ShowLoading }) {
   useEffect(() => {
     const count = setInterval(() => {
       setCounter((counter) => {
-        // counter < 100 ? setCounter(counter + 1) : setCounter(100);
         if (counter < 100) {
           setCounter(counter + 1);
         } else {
           setCounter(100);
           clearInterval(count);
-          reveal();
+          show();
         }
       });
-    }, 30);
+    }, 15);
   }, []);
 
-  const reveal = () => {
+  const show = () => {
     const tl = new TimelineLite({
       onComplete: () => {
         ShowLoading();
       },
     });
-    tl.to('.hide', 0.8, { opacity: 0 }, '+=0.4');
+    tl.to('#count', 0.8, { opacity: 0 }, '+=0.4');
     tl.to('.loading', 0.3, { transform: ' translateY(-100%)' }, '+=0.2');
     tl.to('main', 0.4, { transform: ' translateY(-100%)' });
     tl.to('main', 0, { display: 'none' });

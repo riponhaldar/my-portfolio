@@ -31,7 +31,7 @@ function App() {
         <div className='content'>
           <Cursor />
           <Navbar />
-          <div className='smoothscroll'>
+          <div className='cotent__body'>
             <Fontpage />
             <Scrolltext />
             <Miniabout />

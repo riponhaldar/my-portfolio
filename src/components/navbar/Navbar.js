@@ -40,9 +40,6 @@ function Navbar() {
         }, 300);
       });
     });
-    // group lik
-
-    // link smooth
   });
 
   return (
@@ -51,11 +48,11 @@ function Navbar() {
         <div className='container'>
           <div className='sadasd'>
             <nav>
-              <a href='/'>
+              <Link spy={true} smooth={true} duration={1000} to='home'>
                 <div className='logo' ref={(el) => (logo = el)}>
                   RIpon<span>:)</span>
                 </div>
-              </a>
+              </Link>
               <ul className='nav__items nav' ref={(el) => (navLi = el)}>
                 <li className='nav__links'>
                   <Link spy={true} smooth={true} duration={1000} to='work'>

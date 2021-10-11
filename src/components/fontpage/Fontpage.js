@@ -45,7 +45,7 @@ function Fontpage() {
   });
   return (
     <>
-      <div className='header'>
+      <div className='header' id='home'>
         <div className='header_a'>
           <div className='back_text'>
             <div ref={(el) => (backtext = el)}>
