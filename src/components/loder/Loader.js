@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './loader.scss';
+import { TweenMax, gsap, Power2, Expo, TimelineLite } from 'gsap';
+import { useState } from 'react/cjs/react.development';
 function Loader() {
   return (
     <>
-      <div className='loader'>
-        <div>
-          <img className='loader__img' src='/mack_herry.png' alt='' />
-          <h1>go go...gooooo...</h1>
-        </div>
-      </div>
+      <div id='preloader'>sadsad</div>
     </>
   );
 }

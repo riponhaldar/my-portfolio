@@ -9,26 +9,33 @@ import Miniabout from './components/miniabout/Miniabout';
 import Work from './components/work/Work';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
-import { TweenMax, gsap, Power2, Expo } from 'gsap';
+import { TweenMax, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Cursor from './components/cursor/Index';
-import Loading from './components/Loading.js';
+import Loader from './components/loder/Loader';
 gsap.registerPlugin(ScrollTrigger);
 function App() {
-  const [loading, setLoading] = useState();
-  function ShowLoading() {
+  const [loading, setLoading] = useState(false);
+
+  function showContent() {
     setLoading(true);
   }
-  let app = useRef(null);
+  // useEffect(() => {
+  //   //   setTimeout(() => {
+  //   //     setLoading(false);
+  //   //   }, 4000);
+  // }, []);
 
+  let app = useRef(null);
   useEffect(() => {
     TweenMax.to(app, 0, { css: { visibility: 'visible' } });
   });
   return (
     <div className='App' ref={(el) => (app = el)}>
-      <Loading ShowLoading={() => ShowLoading()} />
       {loading ? (
-        <div className='content'>
+        <Loader showContent={() => showContent()} />
+      ) : (
+        <div className='app_sec'>
           <Cursor />
           <Navbar />
           <div className='smoothscroll'>
@@ -40,7 +47,7 @@ function App() {
             <Footer />
           </div>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }
